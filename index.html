@@ -31,6 +31,11 @@
                 font-size: 3.5rem;
             }
         }
+        img{display: block;
+            margin: auto;
+        }
+
+        img {border:0;}
     </style>
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
@@ -362,9 +367,29 @@
                 </p>
             </div>
             <br/>
-            <div id="map" class="wow fadeInUp" style="width:100%;height:350px;"></div>
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+        
+            <div id="daumRoughmapContainer1655658312352" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
-            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=122a613fc96fa3ab9169935d07c14e3f"></script>
+            <!--
+                2. 설치 스크립트
+                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+            -->
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1655658312352",
+                    "key" : "2ao38",
+                    "mapWidth" : "650",
+                    "mapHeight" : "400"
+                }).render();
+            </script> <br/>
+       
+            <img src="img/map.jpg" width="600" height="450">
+          
             <script>
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
                     mapOption = {
@@ -396,7 +421,7 @@
 
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body section6-location-sub">
-                                지하철 9호선 가양역 9번 출구로 나와 직진 10m도보 후 좌측건물 7층 단독홀
+                                분당선 압구정로데오역 3번출구 첫 번째 골목에서 우회전 한 뒤, 왼쪽 두번째 골목에 위치
                             </div>
                         </div>
                     </div>
@@ -410,10 +435,7 @@
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                             <div class="card-body section6-location-sub">
-                                간선 : 652, 672 <br/>
-                                지선 : 6632 <br/>
-                                공항 : 6018 <br/>
-                                광역 : 770
+                                청담초등학교앞(23-182) 하차 - 143번, 240번, 352번, 4318번, 4419번 버스
                             </div>
                         </div>
                     </div>
@@ -443,7 +465,7 @@
             <br/><br/>
         </div>
         <footer class="pt-5 text-muted text-center text-small section8">
-            <p class="mb-1">© 2020-11-28 Myungwoon, Jeaeun</p>
+            <p class="mb-1">© 2022. Minjoo & Juhan all rights reserved. </p>
             <br/><br/>
             <br/><br/>
         </footer>
