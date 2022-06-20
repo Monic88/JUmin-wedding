@@ -134,7 +134,7 @@ body {
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: rgba(255, 255, 255, 0.421);
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -373,6 +373,7 @@ header {
 
 .section6-location-main {
   font-family: NanumMyeongjo-e;
+  color:darkred;
   line-height: 1.5em;
   font-size: 1.3rem;
 }
@@ -421,7 +422,7 @@ header {
 .section7-button {
   font-family: NanumMyeongjo-b;
   font-size: 1.2rem;
-  background-color: rgb(8, 120, 217);
+  background-color: powderblue;
   color: #fff;
   border: 0;
   border-radius: 50px;
@@ -433,7 +434,7 @@ header {
 .section7-button1 {
   font-family: NanumMyeongjo-b;
   font-size: 1.2rem;
-  background-color: rgb(237, 53, 155);
+  background-color: plum;
   color: #fff;
   border: 0;
   border-radius: 50px;
