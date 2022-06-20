@@ -34,6 +34,10 @@
         img{display: block;
             margin: auto;
         }
+
+        .root_daum_roughmap {
+        margin: auto !important;
+    }
     </style>
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
@@ -57,11 +61,11 @@
         );
         wow.init();
 
-        $(document).ready(function() {
+        $(document).ready(function(){
+            let today = new Date();
             let date = new Date(2022, 09, 24);
-            let currentDate = new Date();
 
-            let result = date - currentDate;
+            let result = date - today;
             let misec = 24 * 60 * 60 * 1000;
 
             result = (result <= 0)? 0 : (parseInt(result / misec) + 0);
@@ -383,12 +387,12 @@
                 new daum.roughmap.Lander({
                     "timestamp" : "1655658312352",
                     "key" : "2ao38",
-                    "mapWidth" : "650",
-                    "mapHeight" : "400"
+                    "mapWidth" : "400",
+                    "mapHeight" : "500"
                 }).render();
             </script> <br/>
        
-            <img src="img/map.jpg" width="600" height="450">
+            <img src="img/map.jpg" width="400" height="300">
           
             <script>
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
@@ -435,7 +439,8 @@
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                             <div class="card-body section6-location-sub">
-                                청담초등학교앞(23-182) 하차 - 143번, 240번, 352번, 4318번, 4419번 버스
+                                청담초등학교앞(23-182) 하차 <br/>
+                                143번, 240번, 352번, 4318번, 4419번 버스
                             </div>
                         </div>
                     </div>
@@ -458,6 +463,20 @@
                                 화곡로 69길 500m 사거리 우회전 > 50m앞 가양 3,5단지 사거리 우회전 > 150m 앞 주차장 진입 <br/>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="section6-location section6-location-main btn btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            주차 안내
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body section6-location-sub">.
+                        모두 발렛파킹으로 안내드리고 있습니다. <br/>식장 앞으로 오시면 스탭들이 주차 도와드릴 예정입니다.
                     </div>
                 </div>
             </div>

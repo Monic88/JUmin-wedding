@@ -15,8 +15,8 @@
   src: url('../font/NanumMyeongjo-Bold.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Inspiration', cursive;
-  src: url('../font/Inspiration-Regular.ttf') format('truetype');
+  font-family: 'Lobster-r';
+  src: url('../font/Lobster-Regular.ttf') format('truetype');
 }
 
 /* Links */
@@ -250,7 +250,7 @@ header {
 }
 
 .section3-main {
-  font-family: DancingScript-b;
+  font-family: Lobster-r;
   line-height: 1.5em;
   font-size: 2rem;
   margin-top: 2em;
@@ -312,7 +312,7 @@ header {
 }
 
 .section5-main {
-  font-family: DancingScript-b;
+  font-family: Lobster-r;
   line-height: 1.5em;
   font-size: 2rem;
 }
@@ -366,7 +366,7 @@ header {
 }
 
 .section6-main {
-  font-family: DancingScript-b;
+  font-family: Lobster-r;
   line-height: 1.5em;
   font-size: 2rem;
 }
