@@ -62,17 +62,16 @@
         wow.init();
 
         $(document).ready(function(){
-            let date = new Date(2022, 09, 24);
-            let currentDate = new Date();
+        let date = new Date(2022, 08, 24);
+        let today = new Date();
 
-            let result = date - currentDate;
-            let misec = 24 * 60 * 60 * 1000;
+        let result = date - today;
+        let misec = 24 * 60 * 60 * 1000;
 
-            result = (result <= 0)? 0 : (parseInt(result / misec) + 0);
-
-            $("#d-day").html(result);
-        });
-    </script>
+        result = (result <= 0)? 0 : Math.ceil(result / misec);
+        $("#d-day").html(result);
+        });    
+</script>
 </head>
 <body class="text-center">
 <div class="top-div">
@@ -300,7 +299,7 @@
         <div class="wow fadeInUp section5 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <br/>
             <p class="section5-title section5-main">Date</p>
-            <p class="section5-title section5-sub" style="margin-top: 0;">9월 24일 · 토요일 · 오후 12:00</p>
+            <p class="section5-title section5-sub" style="margin-top: 5px;">9월 24일 · 토요일 · 오후 12:00</p>
             <table class="wow fadeInUp section5-title section5-table">
                 <tr>
                     <td class="">S</td>
@@ -326,12 +325,12 @@
                     <td>6</td>
                     <td>7</td>
                     <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
+                    <td class="sun">9</td>
+                    <td class="sun">10</td>
                 </tr>
                 <tr>
                     <td class="sun">11</td>
-                    <td>12</td>
+                    <td class="sun">12</td>
                     <td>13</td>
                     <td>14</td>
                     <td>15</td>
@@ -355,7 +354,8 @@
                     <td>29</td>
                     <td>30</td>
                     <td></td>
-                </tr>
+                </tr>         
+                },
             </table>
             <p class="wow fadeInUp section5-title section5-sub" style="margin-top:1.3em">주한 ❤️ 민주 결혼식이 <span id="d-day"></span>일 남았습니다.</p>
             <br/><br/>
@@ -448,37 +448,16 @@
                         <div class="card-header" id="headingThree">
                             <h2 class="mb-0">
                                 <button class="section6-location section6-location-main btn btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    자가용 이용시
+                                    주차 안내
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body section6-location-sub">
-                                올림픽 대로 방면 <br/>
-                                올림픽 대로 > 강서구청 방면 진입 > 가양사거리 우회전 후 150m 전방 위치 <br/>
-                                (건너편 위치 : 150m앞 유턴 후 주차장 진입) <br/>
-                                <br/>
-                                강변북로 방면 <br/>
-                                강변북로 > 가양대로 진입 > 가양역사거리 50m 앞 가양역 8번출구 앞에서 우회전 >
-                                화곡로 69길 500m 사거리 우회전 > 50m앞 가양 3,5단지 사거리 우회전 > 150m 앞 주차장 진입 <br/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <h2 class="mb-0">
-                                <button class="section6-location section6-location-main btn btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    주차 안내
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                            <div class="card-body section6-location-sub">
                                 모두 <b>발렛파킹</b>으로 안내드리고 있습니다. <br/>식장 앞으로 오시면 스탭들이 주차 도와드릴 예정입니다. <br/>
                             </div>
                         </div>
-                    </div>
-        
+                    </div>        
                 </div>
             </div>
             <br/><br/>
